@@ -10,7 +10,7 @@ Great example of how to use API: POST - /devices/:cli then export to a CSV using
 This locates only access points and uses the SendCLI API to send a *show run* command to each online AP.  The output is a CSV file containing the results of every AP, optionally noting which are offline.  The CSV file is stored in the current directory where the Python script resides and can optionally be emailed if SMTP is setup.
 
 ### Known Issues 
-- If you have an XIQ-Controller attached with APs connected to XIQ cloud the script will error trying to send an IQEngine connect to a non-cloud AP device.
+- Fixed in v2: If you have an XIQ-Controller attached with APs connected to XIQ cloud the script will error trying to send an IQEngine connect to a non-cloud AP device.
 - If an AP is online in XIQ but rebooting the script will often time out.
 
 ## Actions & Requirements
