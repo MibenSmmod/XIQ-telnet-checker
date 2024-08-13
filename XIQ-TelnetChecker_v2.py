@@ -45,7 +45,7 @@ from email import encoders
 # XIQ_password = getpass.getpass("Password: ")
 
 ## 3) TOKEN generation from api.extremecloudiq.com (Swagger). Must have empty username and password variables (Uncomment 3 total lines below).  Enter XIQ Toekn within "" only.
-XIQ_Token = ""
+XIQ_Token = "XXXXXXXXXXXXXX"
 XIQ_username = ""
 XIQ_password = ""
 ##Authentication Options END
