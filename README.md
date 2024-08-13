@@ -11,6 +11,7 @@ This locates only access points and uses the SendCLI API to send a *show run* co
 
 ### Known Issues 
 - If you have an XIQ-Controller attached with APs connected to XIQ cloud the GET Devices API will fail.  Once the API endpoint is fixed this script will need an update to filter out controller APs since this can't send IQEngine commands to those APs.
+- If an AP is online in XIQ but rebooting the script will often time out.
 
 ## Actions & Requirements
 You must update the user controllable variables within `XIQ-TelnetChecker_v#.py` which are outlined below.  Install the required modules and generate an API Token to run script without user prompts.  If you need assistance setting up your computing environment, see this guide: https://github.com/ExtremeNetworksSA/API_Getting_Started (Note: the guide does not cover how to run scripts on a schedule but may in the future)
