@@ -9,6 +9,9 @@ Great example of how to use API: POST - /devices/:cli then export to a CSV using
 ### Overview 
 This locates only access points and uses the SendCLI API to send a *show run* command to each online AP.  The output is a CSV file containing the results of every AP, optionally noting which are offline.  The CSV file is stored in the current directory where the Python script resides and can optionally be emailed if SMTP is setup.
 
+### Known Issues 
+- If you have an XIQ-Controller attached with APs connected to XIQ cloud the GET Devices API will fail.  Once the API endpoint is fixed this script will need an update to filter out controller APs since this can't send IQEngine commands to those APs.
+
 ## Actions & Requirements
 You must update the user controllable variables within `XIQ-TelnetChecker_v#.py` which are outlined below.  Install the required modules and generate an API Token to run script without user prompts.  If you need assistance setting up your computing environment, see this guide: https://github.com/ExtremeNetworksSA/API_Getting_Started (Note: the guide does not cover how to run scripts on a schedule but may in the future)
 
